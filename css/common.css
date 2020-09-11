@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+.skip a {
+    display: block;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px 0; */
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: -100px;
+}
+.skip a:focus {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    /* position: static; */
+    position: fixed;
+    top: 0;
+    z-index: 9999999999;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 9999;
+}
+
+header .logonav {
+    position: relative;
+    height: 72px;
+}
+
+.logonav .open_nav,
+.logonav .close_nav {
+    display: none;
+}
+
+.logonav h1 {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    padding: 0 15px;
+    top: 80%;
+    transform: translateY(80%);
+}
+
+.logonav h1 span {
+    font-size: 12px;
+}
+
+.logonav .navwrap {
+    width: 66.6667%;
+    right: 50%;
+}
+
+.logonav .nav {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.logonav .nav .depth1 > li {
+    display: inline-block;
+    position: relative;
+}
+
+.logonav .nav .depth1 > li > a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 28.5px 0;
+    transition: 1s;
+}
+
+.logonav .nav .depth2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: rgba(35,35,35,1);
+    color: #9d9d9d;
+    text-align: left;
+    padding: 13px 0 15px;
+    font-size: 13px;
+    display: none;
+}
+
+.logonav .nav .depth2 li {
+    padding: 0 28px;
+}
+
+.logonav .nav .depth2 li a {
+    display: inline-block;
+    padding: 9px 0 7px;
+    transition: 0.5s;
+}
+
+.logonav .nav .depth1 > li:hover .depth2 {
+    display: block;
+}
+
+.logonav .nav .depth2 a:hover {
+    color: #28BDBE;
+    text-indent: 0.5em;
+}
+
+.logonav .nav .depth1 > li > a:hover,
+.logonav .topmenu a:hover {
+    color: #28BDBE;
+}
+
+.logonav .topmenu {
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    font-size: 11px;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logonav .topmenu a {
+    position: relative;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+
+/* footer */
+footer {
+    background-color: #1c1c1c;
+    color: #6f6f6f;
+    padding: 5% 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .info {
+    float: left;
+    width: 33.33%;
+}
+
+footer .logo h3 {
+    font-size: 25px;
+    line-height: 30px;
+    color: #626262;
+    vertical-align: middle;
+    margin-right: 30%;
+    font-weight: 500;
+}
+
+footer .address p a {
+    transition: 0.5s;
+}
+
+footer .address p a:hover {
+    color: #fff;
+}
+
+footer .notice h2 {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+footer .notice span {
+    font-size: 12px;
+}
+
+footer .notice table td {
+    padding-bottom: 3px;
+}
+
+footer .notice table td:first-child a::before {
+    content: 'ㆍ';
+}
+
+footer .notice table td:first-child{
+    color: #666;
+}
+
+footer .notice table td:last-child{
+    color: #999;
+    text-align: center;
+}
+
+footer .notice table col:first-child {
+    width: 70%;
+}
+
+footer .notice table col:last-child {
+    width: 30%;
+}
+
+footer .infofirst {
+    display: inline-block;
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid #6f6f6f;
+}
+
+footer .infodetail {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 40px;
+}
+
+footer .infodetail p {
+    float: left;
+    width: 70%;
+}
+
+footer .copyright {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+.goTop {
+    display: block;
+    font-size: 20px;
+    position: fixed;
+    right: 1.5%; bottom: 10%;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    background: #28BDBE;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    z-index: 9999;
+    transition: 0.5s;
+}
+
+.goTop:hover {
+    transform: translateY(-10%);
+}

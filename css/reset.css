@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '나눔고딕', '맑은 고딕', sans-serif;
+}
+ul { list-style: none;}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 이미지넓이값은 필요한 곳에서 width:100% 설정 */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+.cf:after, .cf:before {
+    content: "";
+    display: block;
+    clear: both;
+}
+.blind {
+    width: 0;
+    height: 0;
+    position: absolute;
+    text-indent: -9999px;
+    font-size: 0px;
+    overflow: hidden;
+}
+.row {
+    margin: 0 auto;
+    max-width: 100%;;
+    /* margin-right: -15px;
+    margin-left: -15px; */
+    padding: 0 50px;
+}
+
+.container {
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+fieldset {
+    border: none;
+}
+legend {
+    display: none;
+}
+button, input {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button[type=submit], input[type=submit], input[type=reset] {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+address, em {
+    font-style: normal;
+}
+strong {
+    font-weight: normal;
+}

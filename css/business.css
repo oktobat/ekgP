@@ -1,0 +1,179 @@
+@charset 'utf-8';
+@import 'reset.css';
+@import 'common.css';
+
+body {
+    background: #151616;
+}
+
+/* section {
+    padding: 130px 0;
+} */
+
+.businessSec #imgbg {
+    padding: 130px 0 0 !important;
+    overflow: hidden;
+}
+
+.businessSec #imgbg img {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.businessSec .title {
+    font-size: 40px;
+    line-height: 46px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.businessSec .subtitle {
+    font-size: 18px;
+    line-height: 26px;
+    color: #6f6f6f;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+businessSec .subtitle span {
+    border-bottom: 1px solid #6f6f6f;
+    display: inline-block;
+    padding-bottom: 1px;
+}
+
+businessSec .explain {
+    font-size: 14px;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+businessSec .highlight {
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+}
+
+businessSec .titleh5 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: normal;
+    text-align: left;
+}
+
+
+
+#seccol3 {
+    padding: 130px 0;
+}
+
+#seccol3 .explain {
+    /* position: relative; */
+    /* float: left;*/
+    width: 70%;
+    margin: 0 auto;
+}
+
+#img3arr {
+    background: #1c1c1c;
+}
+
+#img3arr div {
+    float: left;
+    width: 33.3333%;
+    padding: 130px 15px;
+}
+
+#seccol2 {
+    padding: 130px 0;
+    position: relative;
+}
+
+#seccol2 .titleh5h6 {
+    float: left;
+    width: 50%;
+}
+
+#seccol2 h6 {
+    font-size: 16px;
+    line-height: 23px;
+    color: #939393;
+}
+
+#seccol2 .explain {
+    margin-left: 8.33%;
+    padding: 0 15px;
+    float: left;
+    width: 41%;
+}
+
+#seccol1 {
+    padding: 130px 0 0;
+    background: #1c1c1c;
+}
+
+#seccol1 .pofollogo {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#seccol1 .titleh5 {
+    text-align: center;
+}
+
+#seccol1 .explain {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#seccol1 .pofolimg {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 100px auto 0;
+}
+
+#img4arr a {
+    float: left;
+    width: 25%;
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+#img4arr .overlay {
+    position: absolute;
+    overflow: hidden;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: 0.2s;
+    padding: 45px;
+    vertical-align: middle;
+}
+
+#img4arr .overlay:hover {
+    opacity: 1;
+}
+
+#img4arr a:hover img {
+    filter: blur(4px);
+}
+
+#img4arr .overlay i {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}

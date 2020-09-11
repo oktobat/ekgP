@@ -1,0 +1,167 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+
+.secbg {
+    background: #fff;
+}
+
+#joinpage {
+    height: 400px;
+}
+
+#joinpage .joinimg {
+    background-image: url(../images/parallax-bg16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position-y: 15%;
+    text-align: center;
+}
+
+.joinimg:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.joinimg h2 {
+    font-size: 46px;
+    line-height: 49px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.joinimg p {
+    color: #fff;
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#join {
+    padding: 5% 0 130px;
+    overflow: hidden;
+    display: block;
+}
+
+.joinbox {
+    background: #fff;
+    width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    padding: 40px 80px;
+}
+
+.joinbox h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #232323;
+    text-align: center;
+}
+
+.joinbox .join_list label {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+    color: #666;
+}
+
+.joinbox .join_list input {
+    /* border: 1px solid red; */
+    background: #eee;
+    height: 40px;
+    width: 48%;
+    padding-left: 1em;
+}
+
+.joinbox .join_list button {
+    background: #D7BA9A;
+    line-height: 30px;
+    padding: 0px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-left: 1em;
+    color: #fff;
+}
+
+.joinbox .join_list li {
+    padding: 8px 0;
+}
+
+.joinbox .join_list .tit_lbl {
+    vertical-align: top;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.joinbox .join_list .info_content {
+    display: inline-block;
+}
+
+.joinbox .join_list .info_content > .w30 {
+    width: 27%;
+}
+
+.joinbox .join_list .info_content > .mb10 {
+    margin-bottom: 10px;
+}
+
+.joinbox .join_list .info_content > .w100 {
+    width: 138%;
+}
+
+.joinbox .join_list .info_content > span {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+
+.join_list .info_content span {
+    font-size: 14px;
+    color: #666;
+    line-height: 45px;
+    padding: 0 5px;
+}
+
+.join_list .info_content select {
+    height: 30px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    /* padding: 0 1em; */
+}
+
+.join_form .btn {
+    margin-top: 20px;
+    text-align: center;
+}
+.join_form .btn input {
+    width: 120px;
+    height: 40px;
+    background: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 0 10px;
+}
+.join_form .btn input[type=submit] {
+    background: #4B637C;
+}
